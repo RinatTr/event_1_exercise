@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  window.alert("page has loaded bye")
+  window.alert("Page has loaded!")
 
   let button = document.querySelector(".windUp");
-
   button.addEventListener("click", () => {
 
     let count = document.querySelector(".countdown")
@@ -17,6 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         secs--;
       }, 1000)
+    })
+
+  let catCount = 0;
+  let dogCount = 0;
+  let quiz = document.querySelector('.quiz');
+  quiz.addEventListener("change", (event) => {
+    if (event.target.id==="cat") {
+      catCount++;
+    } else if (event.target.id==="dog") {
+      dogCount++;
+    }
+    debugger
+  console.log(catCount);
+  console.log(dogCount);
+
   })
 
 })
