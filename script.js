@@ -27,9 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (event.target.id==="dog") {
       dogCount++;
     }
+  let submit = document.querySelector('.submit');
+  submit.addEventListener("click", () => {
+    let answer = document.querySelector('span.answer');
+    catCount>dogCount?
+    answer.innerText = "You are a Cat Person!":
+    answer.innerText = "You are a Dog Person!"
+    console.log("i clicked");
     debugger
-  console.log(catCount);
-  console.log(dogCount);
+  })
 
   })
 

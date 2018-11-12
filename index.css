@@ -7,3 +7,8 @@
 }
 
 /* Use this image for the revealed Jack: https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif */
+div.answer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
